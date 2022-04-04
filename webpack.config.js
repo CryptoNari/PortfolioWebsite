@@ -9,12 +9,13 @@ module.exports = {
     hot: true
   },
   entry: {
-    index: './src/index.js',
-    print: './src/print.js'
+    index: './src/client/index.js',
+    print: './src/client/js/print.js'
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Development',
+      template: "./src/client/views/index.html",
+      filename: "./index.html",
     }),
   ],
   output: {
