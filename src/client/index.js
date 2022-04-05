@@ -1,5 +1,6 @@
 import _ from 'lodash';
 import './styles/style.scss';
+import homeImage from './img/home.jpg';
 import printMe from './js/print.js';
 
 //import './logoipsum-logo-50.svg';
@@ -25,6 +26,8 @@ function pageTransition() {
 
 }
 
+var homeImg = document.getElementById('img-home');
+homeImg.src = homeImage;
 
 /* function component() {
     const element = document.createElement('div');
