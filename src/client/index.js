@@ -39,6 +39,7 @@ var portImg3 = document.getElementById('port-img-3');
 var portImg4 = document.getElementById('port-img-4');
 var portImg5 = document.getElementById('port-img-5');
 var portImg6 = document.getElementById('port-img-6');
+var blogImg1 = document.getElementById('blog-img-1');
 
 homeImg.src = homeImage;
 portImg1.src = portImage1;
@@ -47,6 +48,7 @@ portImg3.src = portImage3;
 portImg4.src = portImage4;
 portImg5.src = portImage5;
 portImg6.src = portImage6;
+blogImg1.src = portImage1;
 
 /* function component() {
     const element = document.createElement('div');
