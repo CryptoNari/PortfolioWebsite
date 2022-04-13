@@ -1,5 +1,6 @@
 import _ from 'lodash';
 import './styles/style.scss';
+//import './styles/_media.scss';
 import homeImage from './img/home.jpg';
 import portImage1 from './img/port1.jpg'
 import portImage2 from './img/port2.jpg';
