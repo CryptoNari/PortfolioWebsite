@@ -1,3 +1,14 @@
+@mixin for-phone {
+  @media (max-width: 599px) { @content; }
+}
+@mixin tablet-portait {
+  @media (min-width: 600px) and (max-width: 899px) { @content; }
+}
+@mixin tablet-landscape {
+  @media (min-width: 900px) and (max-width: 1199px) { @content; }
+}
+
+
 *{
   margin: 0;
   padding: 0;
@@ -57,12 +68,13 @@ a{
 }
 
 header{
+  padding: 50px;
   min-height: 100vh;
   color: var(--color-white);
   overflow: hidden;
- /*  @media screen and (max-width: 600px) {
-    min-height: 100vh;
-  } */
+  @include for-phone {
+    padding: 0;
+  }
 }
 
 section{
