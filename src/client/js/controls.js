@@ -28,4 +28,4 @@ const pageControls = () => {
 
 
 
-export {pageControls}
+export {pageControls};

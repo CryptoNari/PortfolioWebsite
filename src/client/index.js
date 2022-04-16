@@ -1,18 +1,19 @@
 import _ from 'lodash';
+
+/* Import .scss styles */
+
 import './styles/style.scss';
 import './styles/controls.scss';
 import './styles/header.scss';
+import './styles/about.scss';
 import './styles/portfolio.scss';
 import './styles/blog.scss';
+import './styles/contact.scss';
+
+/* Import .js files */
 
 import './js/images.js';
-import './js/controls';
+import {pageControls} from './js/controls';
 
 
 pageControls();
-
-// Add the image to our existing div.
-    /* const myIcon = new Image();
-    myIcon.src = Icon;
-
-    element.appendChild(myIcon); */
