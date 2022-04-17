@@ -1,3 +1,12 @@
+@mixin for-phone {
+  @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portait {
+  @media (min-width: 600px) and (max-width: 899px) { @content; }
+}
+@mixin for-tablet-landscape {
+  @media (min-width: 900px) and (max-width: 1199px) { @content; }
+}
 
 /* Blogs Section */
 
@@ -5,13 +14,20 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
-    margin-top: 3rem;
+    margin-top: 5rem;
+    @include for-phone {
+      grid-template-columns: 1fr;
+      grid-gap: 0;
+    }
     .blog{
       position: relative;
       background-color: var(--color-grey5);
       border-radius: 5px;
       box-shadow: 1px 1px 20px rgba(0,0,0,.1);
       transition: var(--stand-trans);
+      @include for-phone {
+        margin: 2rem;
+      }
       &:hover{
         box-shadow: 1px 1px 20px rgba(0,0,0,.3);
         transform: translateY(-5px);
