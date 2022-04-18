@@ -1,8 +1,8 @@
 @mixin for-phone {
-  @media (max-width: 599px) { @content; }
+  @media (max-width: 749px) { @content; }
 }
 @mixin for-tablet-portait {
-  @media (min-width: 600px) and (max-width: 899px) { @content; }
+  @media (min-width: 750px) and (max-width: 899px) { @content; }
 }
 @mixin for-tablet-landscape {
   @media (min-width: 900px) and (max-width: 1199px) { @content; }
