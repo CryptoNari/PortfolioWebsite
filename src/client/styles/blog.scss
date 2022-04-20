@@ -19,6 +19,19 @@
       grid-template-columns: 1fr;
       grid-gap: 0;
     }
+    @include for-tablet-portait {
+      grid-template-columns: repeat(2, 1fr);
+      padding-bottom: 6rem;
+      margin-top: 6rem;
+      @media screen and (min-width: 750px) and (max-width: 899px) {
+        margin: 6rem 3.5rem;
+      }
+    }
+    @include for-tablet-landscape {
+      grid-template-columns: repeat(2, 1fr);
+      padding-bottom: 6rem;
+      margin-top: 6rem;
+    }
     .blog{
       position: relative;
       background-color: var(--color-grey5);
@@ -65,7 +78,7 @@
         }
         p{
           color: var(--color-grey2);
-          line-height: 2rem;
+          line-height: 1.5rem;
           padding-bottom: 1rem;
         }
       }
