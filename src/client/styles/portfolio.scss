@@ -24,10 +24,18 @@
       grid-template-columns: 1fr;
       padding-bottom: 6rem;
     }
+    @include for-tablet-portait() {
+      grid-template-columns: repeat(2, 1fr);
+      padding-bottom: 6rem;
+      @media screen and (min-width: 750px) and (max-width: 899px) {
+        margin: 3rem 3rem;
+      }
+    }
     .portfolio-item{
       position: relative;
       @include for-phone {
         margin: 0 2rem;
+
       }
       img{
         width: 100%;
@@ -70,6 +78,9 @@
             margin: 0 1rem;
             cursor: pointer;
             transition: var(--stand-trans);
+            @include for-tablet-landscape {
+              margin: 0 .2rem;
+            }
             i{
               font-size: 1.5rem;
               color: var(--color-white);
