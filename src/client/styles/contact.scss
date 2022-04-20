@@ -12,9 +12,17 @@
 
 .contact-content-con{
     display: flex;
-    padding: 3.5rem;
+    padding: 3.5rem 0;
     @include for-phone {
       flex-direction: column;
+    }
+    @include for-tablet-portait() {
+      flex-direction: column;
+      padding: 3.5rem 3.5rem;
+    }
+    @include for-tablet-landscape() {
+      flex-direction: column;
+      padding: 3.5rem 3.5rem;
     }
     .left-contact{
       flex: 2;
@@ -25,7 +33,7 @@
       }
       p{
         margin: 1rem 0;
-        line-height: 2rem;
+        line-height: 1.5rem;
       }
       .contact-info{
         .contact-item{
@@ -87,6 +95,14 @@
         margin-left: 0;
         margin-top: 2.5rem; 
       }
+      @include for-tablet-portait() {
+        margin-left: 0;
+        margin-top: 2.5rem;
+      }
+      @include for-tablet-landscape() {
+        margin-left: 0;
+        margin-top: 2.5rem;
+      }
       .input-control{
         margin: 1.5rem 0;
         input, textarea{
@@ -110,6 +126,13 @@
           margin-left: 1.5rem;
         }
         @include for-phone {
+          flex-direction: column;
+          :last-child{
+              margin-left: 0;
+              margin-top: 1.5rem;
+          }
+        }
+        @include for-tablet-portait {
           flex-direction: column;
           :last-child{
               margin-left: 0;
