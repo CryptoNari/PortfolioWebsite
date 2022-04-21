@@ -17,13 +17,6 @@
     align-items: center;
     justify-content: center;
     transform: translateY(-50%);
-    .active-btn{
-      background-color: var(--color-secondary) !important;
-      transition: var(--stand-trans);
-      i{
-        color: var(--color-white);
-      }
-    }
     @include for-phone {
       top: auto;
       bottom: 0;
@@ -51,8 +44,16 @@
         color: var(--color-white);
         pointer-events: none;
       }
+      
       @include for-phone {
         margin: 1rem .3rem;
+      }
+    }
+    .active-btn{
+      background-color: var(--color-secondary);
+      transition: var(--stand-trans);
+      i{
+        color: var(--color-white);
       }
     }
   }
